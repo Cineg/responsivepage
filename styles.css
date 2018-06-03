@@ -1,0 +1,131 @@
+/*url('https://source.unsplash.com/WLUHO9A_xik/AM7pEI1v-qw')*/
+@import url('https://fonts.googleapis.com/css?family=Sunflower:300');
+
+a{
+  color: #ddd;
+  text-decoration: none;
+}
+
+body{
+  background: #222;
+  font-family: 'Sunflower', sans-serif;
+  color: #ddd;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+header{
+  margin: 0 auto;
+  display: flex;
+  flex: 0 1 100vw;
+  height: 100vh;
+  flex-direction: column;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+}
+
+h1{
+  font-size: 3rem;
+  margin: 0;
+  text-align: center;
+}
+
+h2{
+  font-size: 1rem;
+  text-align: center;
+}
+input{
+  margin-top: 10px;
+  padding: 20px;
+  background: #333;
+  border: 0;
+  border-radius: 20px;
+  width: 10rem;
+  align-self: center;
+  color: #eee;
+  font-size: 0.8rem;
+}
+input:hover{
+  background: #282828;
+  cursor: pointer;
+}
+
+.textside{
+  display: flex;
+  flex: 0 1 100vw;
+  height: 50vh;
+  flex-direction: column;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.photoside{
+  display: flex;
+  background: url('https://source.unsplash.com/AM7pEI1v-qw');
+  background-size:cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  flex: 0 1 100vw;
+  height: 50vh;
+}
+
+
+main{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+}
+
+img{
+  display: block;
+  width: 100%;
+}
+
+
+#photos{
+  padding: 40px 0px;
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: center;
+  background-color: #1e1e1e;
+
+}
+
+article{
+  width: 100%;
+}
+
+article .caption{
+  padding: 30px 0;
+  text-align: center;
+  background-color: #171717;
+}
+
+footer{
+  text-align: center;
+  padding: 30px;
+}
+
+@media (min-width: 700px) {
+  body{
+    font-size: 120%;
+  }
+  header{
+    flex-direction: row;
+  }
+  .textside{
+    width: 50vw;
+    height: 100vh;
+  }
+  .photoside{
+    width: 50vw;
+    height: 100vh;
+  }
+
+}
